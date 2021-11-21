@@ -154,6 +154,4 @@
             </x-auth-card>
         </diV>
     </div>
-    <!-- Footer -->
-    <x-footer></x-footer>
 </x-app-layout>

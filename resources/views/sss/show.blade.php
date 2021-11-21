@@ -114,5 +114,4 @@
             </x-table>
             {{ $ss->withQueryString()->onEachSide(5)->links() }}
         </x-test>
-        <x-footer></x-footer>
 </x-app-layout>

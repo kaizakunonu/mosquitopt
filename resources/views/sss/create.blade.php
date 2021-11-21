@@ -243,10 +243,6 @@
 
 
         </x-auth-card>
-
-
-    <!-- Footer Component -->
-    <x-footer></x-footer>
 </x-app-layout>
 
 

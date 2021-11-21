@@ -165,9 +165,6 @@
         {!!Form::close()!!}
 
     </x-auth-card>
-
-    <!-- Footer -->
-    <x-footer></x-footer>
 </x-app-layout>
 
 

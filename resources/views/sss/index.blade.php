@@ -69,6 +69,5 @@
             </a>
         </x-auth-card>
     @endif
-    <x-footer></x-footer>
 </x-app-layout>
 

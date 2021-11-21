@@ -111,7 +111,4 @@
             </p>
         </x-auth-card>
 @endif
-
-<!-- Footer -->
-    <x-footer></x-footer>
 </x-app-layout>

@@ -35,6 +35,5 @@
         {!! Form::close() !!}
 
     </x-auth-card>
-    <x-footer></x-footer>
 </x-app-layout>
 

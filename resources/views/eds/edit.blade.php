@@ -258,5 +258,4 @@
             <x-button type="submit" form="ed_delete"> Delete this form row </x-button>
         </form>
     </x-auth-card>
-    <x-footer></x-footer>
 </x-app-layout>

@@ -153,5 +153,4 @@
             <x-button type="submit"> Delete this form row </x-button>
         </form>
     </x-auth-card>
-    <x-footer></x-footer>
 </x-app-layout>
