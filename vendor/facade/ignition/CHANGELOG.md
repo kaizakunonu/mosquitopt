@@ -2,6 +2,26 @@
 
 All notable changes to `ignition` will be documented in this fil
 
+## 2.16.1 - 2021-11-16
+
+- allow sending of unbinded sql queries to Flare
+
+## 2.16.0 - 2021-10-28
+
+- improve recording data from jobs (#416)
+
+## 2.15.0 - 2021-10-11
+
+- improve output of flare:test
+
+## 2.14.1 - 2021-10-08
+
+- update base URL for Flare
+
+## 2.14.0 - 2021-10-01
+
+- add support for VScode WSL + SSH remote (#420)
+
 ## 2.13.1 - 2021-09-13
 
 - fix namespace of `SentReports` in facade

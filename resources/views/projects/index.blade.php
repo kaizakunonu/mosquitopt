@@ -5,9 +5,8 @@
             {{ __('Showing all of your own created projects') }}
         </h2>
     </x-slot>
-
     <!-- Page Content -->
-    @if(!empty($own_projects))
+    @if($own_projects->isNotEmpty())
         <div class="flex flex-wrap">
             <div class="flex-1 ...">
                 <x-auth-card>

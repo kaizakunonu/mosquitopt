@@ -920,7 +920,8 @@ class SqlitePlatform extends AbstractPlatform
                 continue;
             }
 
-            $columns = $this->replaceColumn($diff->name, $columns, $oldColumnName, $column);
+            $oldColumnName = strtolower($oldColumnName);
+            $columns       = $this->replaceColumn($diff->name, $columns, $oldColumnName, $column);
 
             if (! isset($newColumnNames[$oldColumnName])) {
                 continue;
@@ -934,7 +935,8 @@ class SqlitePlatform extends AbstractPlatform
                 continue;
             }
 
-            $columns = $this->replaceColumn($diff->name, $columns, $oldColumnName, $columnDiff->column);
+            $oldColumnName = strtolower($oldColumnName);
+            $columns       = $this->replaceColumn($diff->name, $columns, $oldColumnName, $columnDiff->column);
 
             if (! isset($newColumnNames[$oldColumnName])) {
                 continue;
