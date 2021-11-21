@@ -33,7 +33,18 @@
 
             <!-- Page Content -->
             <main>
-                {{ $slot }}
+
+                <div class="container m-0">
+                    <div class="row">
+                        <div class="col-2 bg-info ">
+                           <!-- <aside class="flex-wrap float-start"></aside>-->
+                        </div>
+                        <div class="col">
+                            {{ $slot }}
+                        </div>
+                    </div>
+                </div>
+
             </main>
         </div>
         <x-footer></x-footer>
