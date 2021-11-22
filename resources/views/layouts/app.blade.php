@@ -65,9 +65,13 @@
                                             Show all IC records related to this project
                                         </a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <a href="{{ route( 'ics.create', [ 'pc' => session('pc'), 'pt'=>session('pt') ] ) }}" >
+
+                                            Download an empty informed consent template for this project
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                             <br>
