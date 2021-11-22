@@ -111,7 +111,7 @@ class ProjectController extends Controller
         // Start the session
         session_start();
 
-        session(['pc' => $project->pc,'pt'=>$project->pt]);
+        session(['pc' => $project->pc,'pt'=>$project->title]);
 
         // get the project
         $project = Project::find($project->uuid);

@@ -18,7 +18,7 @@ use Illuminate\Support\Str;
  *
  * @property string $uuid
  * @property string $pc
- * @property string $pt
+ * @property string $title
  * @property int $pi
  * @property int $pl
  * @property int $pa
