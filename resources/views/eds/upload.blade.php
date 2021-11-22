@@ -4,7 +4,7 @@
 
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-             Uploading Experiment Design (ED) data for <strong> <u> {{request('pt')}} </u> </strong> project
+             Uploading Experiment Design (ED) data for <strong>  {{request('pt')}}  </strong> project
         </h2>
     </x-slot>
 

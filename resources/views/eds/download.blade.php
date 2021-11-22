@@ -3,8 +3,8 @@
     <!-- Page Header -->
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            <p> Project : {{ $pt }} </p>
-           <p> Experiment Design : Field Collections </p>
+             Project : {{ $pt }} <br>
+           Experiment Design : Field Collections
         </h2>
     </x-slot>
 

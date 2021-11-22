@@ -2,7 +2,7 @@
     <!-- Page Header -->
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-             Project : <u>{{request('pt')}} </u> <br>
+             Project : {{request('pt')}} <br>
              Activity : Showing all ED experiments
         </h2>
     </x-slot>

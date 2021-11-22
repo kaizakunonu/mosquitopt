@@ -2,8 +2,8 @@
     <!-- Page Header -->
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            Project : <u> {{request('pt')}} </u> <br>
-            Activity : Editing details for form row number <u> {{request('fr')}} </u>
+            Project :{{request('pt')}}  <br>
+            Activity : Editing details for form row number {{request('fr')}}
         </h2>
     </x-slot>
     <!-- Page Content -->
