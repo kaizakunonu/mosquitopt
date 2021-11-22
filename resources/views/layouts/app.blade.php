@@ -36,19 +36,19 @@
                 <!-- Sidebar -->
                 <div class="container m-0">
                     <div class="row">
-                        <div class="col-2 bg-green-800 ">
+                        <div class="col-2 bg-green-600 ">
                             <br>
-                                <button class="btn btn-secondary " type="button">
+                                <button class="btn btn-dark " type="button">
                                     <a href="{{ route('dashboard') }}"> Dashboard </a>
                                 </button>
                             <br>
                             <br>
                             <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     Projects
                                 </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="{{route('projects.index')}}"> My Projects </a></li>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item active" href="{{route('projects.index')}}"> My Projects </a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="{{route('projects.create')}}"> Create a new project </a></li>
 
@@ -56,10 +56,10 @@
                             </div>
                             <br>
                             <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     Informed Consent (IC)
                                 </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
                                     <li>
                                         <a class="dropdown-item" href="{{ route( 'ics.index', [ 'pc'=>session('pc'), 'pt'=> session('pt'), ]) }}" >
                                             Show all IC records related to this project
@@ -76,10 +76,10 @@
                             </div>
                             <br>
                             <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     Experiment Design (ED)
                                 </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
                                     <li>
                                         <a class="dropdown-item" href="{{ route( 'eds.index', [ 'pc'=> session('pc'), 'pt'=>session('pt'), ]) }}" >
                                             Show all ED records related to this project
@@ -95,10 +95,10 @@
                             </div>
                             <br>
                             <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     Sample Sorting (SS)
                                 </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
                                     <li>
                                         <a class="dropdown-item" href="{{ route( 'sss.index', [ 'pc'=>session('pc'), 'pt'=> session('pt'), ]) }}" >
                                             Show all SS records related to this project
