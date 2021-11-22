@@ -2,7 +2,7 @@
     <!-- Page Header -->
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            Project : <u>{{request('pt')}} </u> <br>
+            Project : <u>{{session('pt')}} </u> <br>
             Activity : Showing all Informed Consents
         </h2>
     </x-slot>
