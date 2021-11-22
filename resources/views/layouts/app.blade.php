@@ -36,7 +36,7 @@
                 <!-- Sidebar -->
                 <div class="container m-0">
                     <div class="row">
-                        <div class="col-2 bg-success ">
+                        <div class="col-2 bg-green-800 ">
                             <br>
                                 <button class="btn btn-secondary " type="button">
                                     <a href="{{ route('dashboard') }}"> Dashboard </a>
