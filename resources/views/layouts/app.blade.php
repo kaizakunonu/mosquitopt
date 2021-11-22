@@ -99,9 +99,17 @@
                                     Sample Sorting (SS)
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route( 'sss.index', [ 'pc'=>session('pc'), 'pt'=> session('pt'), ]) }}" >
+                                            Show all SS records related to this project
+                                        </a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route( 'sss.create', [ 'pc' => session('pc'), 'pt'=> session('pt') ] ) }}" >
+                                            Download an empty sample sorting template for this project
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
