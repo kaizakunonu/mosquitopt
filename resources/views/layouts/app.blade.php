@@ -33,30 +33,25 @@
 
             <!-- Page Content -->
             <main>
-
+                <!-- Sidebar -->
                 <div class="container m-0">
                     <div class="row">
-                        <div class="col-2 bg-info ">
+                        <div class="col-2 bg-success ">
                             <br>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dashboard
+                                <button class="btn btn-secondary " type="button">
+                                    <a href="{{ route('dashboard') }}"> Dashboard </a>
                                 </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
+                            <br>
                             <br>
                             <div class="dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     Projects
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="{{route('projects.index')}}"> My Projects </a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="{{route('projects.create')}}"> Create a new project </a></li>
+
                                 </ul>
                             </div>
                             <br>
@@ -65,6 +60,11 @@
                                     Informed Consent (IC)
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route( 'ics.index', [ 'pc'=>session('pc'), 'pt'=> session('pt'), ]) }}" >
+                                            Show all IC records related to this project
+                                        </a>
+                                    </li>
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
