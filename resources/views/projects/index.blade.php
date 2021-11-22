@@ -61,33 +61,6 @@
                     </div>
                 </x-auth-card>
             </div>
-
-            <!-- New project pane -->
-            <div class="flex-1 ...">
-                <x-auth-card>
-                    <x-slot name="logo">
-                        <h3><strong> New project pane </strong></h3>
-                    </x-slot>
-
-                    <table class="border-separate border border-green-800 rounded-md ...">
-                        <thead class="border border-green-600 bg-green-100 rounded-md ...">
-                        </thead>
-                        <tbody>
-
-                        <!-- Create a new project -->
-                        <tr>
-                            <td class="border border-green-600 bg-green-100 rounded-md ...">
-                                <a href="{{ route('projects.create', array()) }}">
-                                    <x-button>
-                                        {{ __('Create a new project') }}
-                                    </x-button>
-                                </a>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </x-auth-card>
-            </div>
         </div>
     @else
         <x-auth-card>
