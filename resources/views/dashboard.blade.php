@@ -16,41 +16,41 @@
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                     <div class="p-6 bg-white border-b border-gray-200">
                         @if(!empty($projects))
-                            <table class="border-separate border border-green-800 rounded-md ...">
+                            <x-table class="caption-top">
+                                <caption> Click on a project title to view its details </caption>
                                 <thead>
                                 <tr>
-                                    <th class="border border-green-600 bg-green-500 rounded-md ...">
+                                    <x-th>
                                         Project Code (PC)
-                                    </th>
-                                    <th class="border border-green-600 bg-green-500 rounded-md ...">
+                                    </x-th>
+                                    <x-th>
                                         Project Title
-                                    </th>
+                                    </x-th>
                                 </tr>
                                 </thead>
-                                <caption> Click on a project title to view its details</caption>
                                 <tbody>
 
                                 @foreach($projects as $project)
 
                                     <tr>
-                                        <td class="border border-green-600 bg-green-100 rounded-md ...">
+                                        <x-td>
                                             <p>
                                                 {{ $project->pc }}
                                             </p>
-                                        </td>
+                                        </x-td>
 
-                                        <td class="border border-green-600 bg-green-100 rounded-md ...">
+                                        <x-td>
                                             <p>
                                                 <a href="{{route('projects.show', $project->uuid)}}">{{$project->title}}
                                                 </a>
                                             </p>
-                                        </td>
+                                        </x-td>
                                     </tr>
 
                                 @endforeach
                                 </tbody>
 
-                            </table>
+                            </x-table>
                         @else
                             <p>
                                 You currently do not have a project to work on.
