@@ -67,7 +67,7 @@
                                     </li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li>
-                                        <a href="{{ route( 'ics.create', [ 'pc' => session('pc'), 'pt'=>session('pt') ] ) }}" >
+                                        <a class="dropdown-item" href="{{ route( 'ics.create', [ 'pc' => session('pc'), 'pt'=>session('pt') ] ) }}" >
 
                                             Download an empty informed consent template for this project
                                         </a>
@@ -80,9 +80,17 @@
                                     Experiment Design (ED)
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route( 'eds.index', [ 'pc'=> session('pc'), 'pt'=>session('pt'), ]) }}" >
+                                            Show all ED records related to this project
+                                        </a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route( 'eds.create', [ 'pc' => session('pc'), 'pt'=>session('pt') ] ) }}" >
+                                            Download an empty experiment design template for this project
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                             <br>
