@@ -36,7 +36,6 @@
                 <!-- Sidebar -->
                 <div class="container m-0">
                     <div class="row">
-                        @if(session('pc'))
                         <div class="col-2 bg-green-600">
                             <br>
                                 <button class="btn btn-dark " type="button">
@@ -49,13 +48,14 @@
                                     Projects
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item active" href="{{route('projects.index')}}"> My Projects </a></li>
+                                    <li><a class="dropdown-item" href="{{route('projects.index')}}"> My Projects </a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="{{route('projects.create')}}"> Create a new project </a></li>
 
                                 </ul>
                             </div>
                             <br>
+                            @if(session('pc'))
                             <div class="dropdown">
                                 <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     Informed Consent (IC)
@@ -113,8 +113,8 @@
                                     </li>
                                 </ul>
                             </div>
+                            @endif
                         </div>
-                        @endif
                         <div class="col">
                             {{ $slot }}
                         </div>
