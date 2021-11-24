@@ -2,18 +2,18 @@
     <!-- Page Header -->
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-             Project : {{request('pt')}} <br>
+             Project : {{session('pt')}} <br>
             Activity : Showing details for experiment number <strong> {{ request('en') }} </strong>
         </h2>
     </x-slot>
     <!-- Page Content -->
     @once
-    <x-test>
+    <x-auth-card>
         <x-slot name="logo">
             <h3><strong> ED Experiment No. {{ request('en') }} </strong></h3>
         </x-slot>
         @endonce
-    <x-table>
+    <x-table class="caption-top">
             <caption> Scroll down to download and edit this experiment </caption>
             <thead>
             <tr>
@@ -117,5 +117,5 @@
             </tbody>
         </x-table>
         {{ $ed->withQueryString()->onEachSide(5)->links() }}
-    </x-test>
+    </x-auth-card>
 </x-app-layout>
