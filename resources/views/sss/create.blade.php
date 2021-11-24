@@ -3,8 +3,8 @@
     <!-- Page Header -->
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            <p> Project Title: <u> {{ $pt }} </u></p>
-            <p>Sample Sorting : <u> Adult Field Collection </u> </p>
+             Project Title: {{ session('pt') }} <br>
+            Sample Sorting : Adult Field Collection
         </h2>
     </x-slot>
 
