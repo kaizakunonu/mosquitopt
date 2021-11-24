@@ -11,6 +11,8 @@ class DashboardController extends Controller
     {
       //  session_start();
         session(['uid'=>Auth::User()->getAuthIdentifier(), 'fname'=>Auth::User()->fname]);
+        // Forget a single key...
+        session()->forget('pc');
 
 
         // get all projects

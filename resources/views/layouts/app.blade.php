@@ -36,7 +36,8 @@
                 <!-- Sidebar -->
                 <div class="container m-0">
                     <div class="row">
-                        <div class="col-2 bg-green-600 ">
+                        @if(session('pc'))
+                        <div class="col-2 bg-green-600">
                             <br>
                                 <button class="btn btn-dark " type="button">
                                     <a href="{{ route('dashboard') }}"> Dashboard </a>
@@ -113,6 +114,7 @@
                                 </ul>
                             </div>
                         </div>
+                        @endif
                         <div class="col">
                             {{ $slot }}
                         </div>
